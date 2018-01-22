@@ -30,7 +30,9 @@ class SoundSelector extends Component {
       this.props.handleSaveProjectAfterRemove(this.props.keyboard.track)
     }
 
-    if (prevProps.keyboard.id !== this.props.keyboard.id){
+    if (!prevProps.keyboard.id && this.props.keyboard.id){
+      this.props.handleGetKeys(this.props.keyboard.id);
+    } else if (prevProps.keyboard.id !== this.props.keyboard.id){
       this.props.handleGetKeys(this.props.keyboard.id);
     }
   }
