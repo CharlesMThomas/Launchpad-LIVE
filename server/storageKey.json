@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fsa-stackathon",
+  "private_key_id": "6284fde9b3a977f26a965b1fe05111a137f94c6b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDEpKgo1/6xnEy8\nHw7eYHmNsq0bCfmXKRKKqCtBJAeUSu2BNSL3XcM4Fv0bi0FdZI2aRflqPafXuwcg\nwZ/MoDRQNO2tkltV+Ab1B/0p2yeZ8h3y0bk3GYrJT1Kj5b7adEVH89TRhTtMhLCy\nmO00vFubsvnnQWnWE6iu532rIzo14DH6RyVUlNIOFuQQdzjByHMhTmrSi7vdveGb\nzuEftNn2ppr0G4IvPhTgTKqk7VDbSIaaV8Y1c+3dZVynR6Juptr1gcCbUgzefTxT\n8Dj722aIhE+vXVCLNjXbNfu/3X05GkqfEwzP4DW2ZNnWq2U1EU3Lbpp0HRA1TlCX\nl6ZkcH+BAgMBAAECggEAD+5dF04EeuQ0TUtg24BKaMHwh0/EEkyIDYa5VmIyYP+/\nBShGaG8GuV0XbWtXRNc4J6cCoWpUVkR3O96j8SKLinH3TYgdcTYSbjiS+JiiOTUl\n2v3FuSKPHWcZRWEAGNexozYsaDsYhkb7v8Rm905JR7B00Zj5l5fpIx5rDnngpeua\n6UhWfHVdhmjncUbWWLaGDonDpUphULkjB6TjC0HFCpX1Vd+KMJUua+erRRTdmXtp\nHS9WYBJjCJYkK3050LUUqN9+RSckoC2EqVkVnhnbd2PoAFZFEH2qOji9kh8M7/lV\nKsG47wYsLUPI7NAdqLgRj4NVFgyt0wZxV6ZyLpdVdwKBgQD3fTA2AdEhMxSSPTZD\nXuKvEkUD6zyjC658CyOboDbNdkqT7/XCQm6ROxdGPeljOjLq7esF9w0AuCtypaZc\nxzkcnXPDrDatUmcAkS7IzkcsEJXg++uFkXQ4SrfjUxE2xIEisSAxZqSHlUB+jL6V\nJRmgrpP9HQBnsucZDZlO7B8i/wKBgQDLZ9ay600bD5dosdneMTe+RRhKq7aiclSl\nY4saSj9UitJ/IQjXbJZ5ovAleBnn3/T2K1q3KNZMin6Pf+lKk0Fqc4ezeIBGVtNw\nTEdDChf5UUTKothmbw4QX7li5oMU0QOoOf1iCnXkA2UZzrVdxoxoTijQuDSBwie/\nZ93/SDjdfwKBgFeDNvcB8Xcx3sZPSs7L0JBjf3ABUHG/AbXvImo3XumMOJbTNS25\n2+sS4AoAfnSN8c9MzdxQHZLxjLt/g7Iu6C0MKBE65iKnjrCOpeJvvo8AVl819XRH\nmLcHBLsndmDNX3Rq+Z0+VFN1HVciYYnPkp5U3ROVm70Pb9RWEK3tpJz1AoGAMcek\n9L6/bRsAvB+iqU00Tj2Mt2GU3ebLLnrRJUr8es1KvNAx4L7ziKtGyHS/Kk9WHRT5\nK5Az+iF+3dG5H4YwYUQK9vJLumsvbfFNE2wZ9+tawZjfCxqsv3cd4MV3WRXaJkai\n62aR+Y6XJJzBKEUaQcC3HnWmbAc/QQnDe+GKATMCgYEAhY3av9bOpua/EGrWKURo\nVUTFRy6uZtYCy9LaTZEUMnZzYVaKzca0j1eO/ekWMdM1Jhcdpo1gaknHEK0pkVsV\nHd1hfo/DO6+wUrdHEahntPZVnR3guZ239OMyZ/N9V29Vnz27YU1S8pZE/JssMMLK\nwd1UkWBMSRPAmtOSsq9Cxqk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-revu0@fsa-stackathon.iam.gserviceaccount.com",
+  "client_id": "105068028877808334497",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-revu0%40fsa-stackathon.iam.gserviceaccount.com"
+}

@@ -1,0 +1,446 @@
+body {
+  font-family: sans-serif;
+  background-image: url('/assets/images/simple_dashed_@2X.png');
+  background-repeat: repeat;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #FFF;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  display: block;
+}
+
+nav a {
+  display: inline-block;
+  margin: 1em;
+}
+
+form div {
+  margin: 1em;
+}
+
+.form-wrapper {
+  width: 400px;
+  text-align: center;
+}
+
+.auth-form input:focus, .add-btn:focus {
+  outline:0;
+}
+
+.auth-form {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form input {
+  width: 300px;
+  height: 36px;
+  color: #fff;
+  font-size: 22px;
+  background: rgba(0,0,0,0);
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+
+.error {
+  color: rgb(255, 117, 117);
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+.sign-up {
+  margin-top: 30px;
+}
+
+.sign-up-text {
+  color: #FFF;
+}
+
+.sign-up-link {
+  color: rgb(117, 255, 138);
+}
+
+.main {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.heading {
+  width: 100%;
+}
+
+.heading h1 {
+  width: 400px;
+  display: inline-block;
+}
+
+.sign-out {
+  color: #FFF;
+  float: right;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.sound-select-wrapper {
+  width: 350px;
+  padding: 10px;
+  border-radius: 5px;
+  border-top: 1px solid #555;
+  border-left: 1px solid #555;
+  border-right: 1px solid #111;
+  border-bottom: 1px solid #111;
+  background: linear-gradient(#444, rgb(58, 58, 58));
+  height: 588px;
+}
+
+.sound-selector {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.sound-selector ul {
+  padding: 0;
+}
+
+.sound-selector ul li {
+  color: #EEE;
+  padding: 10px 10px 5px 10px;
+  border-bottom: 1px solid #111;
+}
+
+.live-view-wrapper {
+  width: 1000px;
+  margin-left: 50px;
+  height: 583px;
+  max-width: 850px;
+
+}
+
+.live-view {
+  width: 100%;
+  padding: 30px 0 20px 30px;
+  background: linear-gradient(90deg, #333, #222);
+  border-radius: 20px;
+  border-top: 1px solid #555;
+  border-left: 1px solid #555;
+  border-right: 1px solid #111;
+  border-bottom: 1px solid #111;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.8);
+}
+
+.live-key {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  padding: 2px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.live-key-wrapper {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.live-key.unmounted {
+  background: radial-gradient(circle, #999, #888, #777);
+  border-radius: 5px;
+  border-top: 1px solid #AAA;
+  border-left: 1px solid #AAA;
+  border-right: 1px solid #555;
+  border-bottom: 1px solid #555;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.live-key.mounted {
+  background: radial-gradient(circle, rgb(255, 248, 193), rgb(255, 241, 131), rgb(255, 234, 79));
+  border-radius: 5px;
+  border-top: 1px solid rgb(255, 248, 198);
+  border-left: 1px solid rgb(255, 248, 198);
+  border-right: 1px solid rgb(219, 202, 68);
+  border-bottom: 1px solid rgb(219, 202, 68);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+}
+
+.live-key.playing {
+  background: radial-gradient(circle, rgb(204, 255, 212), rgb(152, 255, 167), rgb(117, 255, 138));
+  border-radius: 5px;
+  border-top: 1px solid rgb(176, 255, 188);
+  border-left: 1px solid rgb(199, 255, 207);
+  border-right: 1px solid rgb(111, 242, 130);
+  border-bottom: 1px solid rgb(111, 242, 130);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+}
+
+.setting {
+  background: rgb(117, 255, 138)
+}
+
+.sound-name {
+  float: left;
+  position: relative;
+  top: 36px;
+  left: 1px;
+  font-size: 12px;
+  line-height: 2em;
+  width: 70px;
+  overflow: hidden;
+}
+
+progress {
+  width: 100%;
+}
+
+.heading {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.live {
+  color: rgb(117, 255, 138);
+}
+
+.add-btn {
+  cursor: pointer;
+  float:right;
+  margin-top: -3px;
+  width: 30px;
+  height: 25px;
+  border: 1px solid rgb(98, 215, 116);
+  border-radius: 2px;
+  margin-right: 5px;
+}
+
+.preview-btn {
+  cursor: pointer;
+  float:right;
+  margin-top: -3px;
+  width: 30px;
+  height: 25px;
+  border: 1px solid rgb(98, 215, 116);
+  border-radius: 2px;
+  margin-right: 5px;
+}
+
+.remove-btn {
+  cursor: pointer;
+  float:right;
+  margin-top: -3px;
+  width: 30px;
+  height: 25px;
+  border: 1px solid rgb(98, 215, 116);
+  border-radius: 2px;
+}
+
+.selector-name {
+  width: 200px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.file-btn {
+  display: none;
+}
+
+.login-btn {
+  margin-top: 20px;
+  border: 1px solid rgb(98, 215, 116);
+  background-color: rgba(0,0,0,0);
+  font-size: 18px;
+  color: #FFF;
+  height: 50px;
+  width: 120px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.project-btn {
+  margin-top: 20px;
+  border: 1px solid rgb(98, 215, 116);
+  background-color: rgba(0,0,0,0);
+  font-size: 18px;
+  color: #FFF;
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.social-login {
+  margin-top: 15px;
+  font-size: 25px;
+  margin-right: 15px;
+  margin-left: 8px;
+  color: #FFF;
+}
+
+.menu-btn {
+  border: 1px solid rgb(98, 215, 116);
+  background-color: rgba(0,0,0,0);
+  font-size: 16px;
+  color: #FFF;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.left-margin {
+  margin-left: 20px;
+}
+
+.menu-btn:hover, .login-btn:hover, .project-btn:hover {
+  background-color: rgba(117, 255, 138, 0.5);
+}
+
+.sign-out:hover {
+  color: rgb(98, 215, 116);
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu-btn i {
+  color: #FFF;
+}
+
+.live-view-wrapper .menu {
+  margin-bottom: 30px;
+}
+
+.get-started {
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px !important;
+}
+
+.load-project-wrapper {
+  border: 1px solid #555;
+  background: linear-gradient(#444, rgb(58, 58, 58));
+  font-size: 18px;
+  color: #FFF;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-align: left !important;
+  padding: 5px;
+  margin-top: 30px;
+}
+
+.load-project-wrapper ul {
+  padding-left: 0;
+  margin: 0;
+  max-height: 250px;
+  overflow: auto;
+}
+
+.load-project-wrapper ul li {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.load-project-wrapper ul li:hover {
+  background: rgba(117, 255, 138, 0.5);
+  cursor: pointer;
+}
+
+.load-project-wrapper ul li:last-of-type {
+  padding: 10px;
+  border-bottom: none;
+}
+
+.track-buttons-wrapper {
+  width: 100%;
+  padding-bottom: 15px;
+  padding-left: 5px;
+}
+
+.track-buttons-wrapper button.ready {
+  background: radial-gradient(circle, rgb(255, 248, 193), rgb(255, 241, 131), rgb(255, 234, 79));
+  border-top: 1px solid rgb(255, 248, 198);
+  border-left: 1px solid rgb(255, 248, 198);
+  border-right: 1px solid rgb(219, 202, 68);
+  border-bottom: 1px solid rgb(219, 202, 68);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+}
+
+.rec-btn, .play-btn, .stop-btn, .rew-btn, .clear-btn {
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  color: rgba(0,0,0,0.5);
+  background: radial-gradient(circle, #999, #888, #777);
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  border-top: 1px solid #AAA;
+  border-left: 1px solid #AAA;
+  border-right: 1px solid #555;
+  border-bottom: 1px solid #555;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.clear-btn {
+  float: right;
+  margin-right: 35px;
+}
+
+.rec-btn.active, .clear-btn.active {
+  background: radial-gradient(circle, rgb(255, 204, 204), rgb(255, 152, 152), rgb(255, 117, 117))
+}
+
+.play-btn.active {
+  background: radial-gradient(circle, rgb(204, 255, 212), rgb(152, 255, 167), rgb(117, 255, 138))
+}
+
+.rec-btn:focus, .play-btn:focus, .stop-btn:focus, .track-time:focus, .rew-btn:focus, .remove-btn:focus, .clear-btn:focus {
+  outline: 0;
+}
+
+.track-time {
+  position: absolute;
+  font-size: 24px;
+  padding-left: 10px;
+  height: 48px;
+  width: 120px;
+  border: none;
+  color: #FFF;
+  background: rgba(255,255,255,0.05);
+}
+
+.create-link-wrapper {
+  margin-top: 20px;
+}
+
+.create-link-wrapper a {
+  color: rgb(98, 215, 116);
+  cursor: pointer;
+}
