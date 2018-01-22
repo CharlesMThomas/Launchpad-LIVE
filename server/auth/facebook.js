@@ -4,16 +4,10 @@ const FacebookStrategy = require('passport-facebook')
 const {User} = require('../db/models')
 module.exports = router
 
-if (!process.env.FACEBOOK_CLIENT_ID || !process.env.FACEBOOK_CLIENT_SECRET) {
-
-  console.log('Facebook client ID / secret not found. Skipping Facebook OAuth.')
-
-} else {
-
   const facebookConfig = {
-    clientID: process.env.FACEBOOK_CLIENT_ID,
-    clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
-    callbackURL: process.env.FACEBOOK_CALLBACK,
+    clientID: '354229048320684',
+    clientSecret: '9cb0cfcd2321fc399cfaee304b090714',
+    callbackURL: '/auth/facebook/callback',
     profileFields: ['id', 'emails', 'name']
   }
 
@@ -45,5 +39,3 @@ if (!process.env.FACEBOOK_CLIENT_ID || !process.env.FACEBOOK_CLIENT_SECRET) {
     // Successful authentication, redirect home.
     res.redirect('/projects');
   });
-
-}
