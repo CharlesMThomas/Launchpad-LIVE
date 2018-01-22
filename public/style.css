@@ -121,6 +121,7 @@ form div {
 
 .sound-selector ul {
   padding: 0;
+  margin-top: 0;
 }
 
 .sound-selector ul li {
