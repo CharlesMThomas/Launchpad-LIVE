@@ -19,7 +19,7 @@ router.post('/', (req, res, next) => {
       .upload(__dirname + `/tmp/${req.headers.name}`,{
         metadata: {
           metadata: {
-            firebaseStorageDownloadTokens: process.env.ACCESS_TOKEN
+            firebaseStorageDownloadTokens: '4148436AE4D4AAD5A6A02DB2E79C01FAC1B0DCF5E0160A58366ADCE568606481'
           }
         }
       })
