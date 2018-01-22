@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {withRouter, Link} from 'react-router-dom'
-import {logout, uploadKeyThunk, getKeysThunk, addKey, resetApp, resetKeyboard, saveProjectThunk, loadProjectThunk, newProject, loadProject} from '../store'
+import {logout, uploadKeyThunk, getKeysThunk, addKey, resetApp, resetKeyboard, saveProjectThunk, loadProjectThunk, newProject, loadProject, clearKeys} from '../store'
 import Reader from '../utils/reader'
 import load from 'audio-loader'
 import {KeySelector, LiveView, LiveKey} from './index'
@@ -30,6 +30,7 @@ class Main extends Component {
 
   componentDidMount() {
     this.props.handleLoad(this.props.match.params.id);
+    this.props.handleGetKeys(this.props.match.params.id);
   }
 
   componentDidUpdate(prevProps) {
@@ -98,8 +99,8 @@ const mapDispatch = (dispatch) => {
       console.log('USER ID:', userId);
       dispatch(uploadKeyThunk(sound, userId))
     },
-    handleGetKeys() {
-      dispatch(getKeysThunk())
+    handleGetKeys(keyboardId) {
+      dispatch(getKeysThunk(keyboardId))
     },
     handleAddKey(key) {
       dispatch(addKey(key))
@@ -116,9 +117,11 @@ const mapDispatch = (dispatch) => {
     },
     handleLoad(id) {
       dispatch(loadProjectThunk(id))
+      dispatch(clearKeys())
     },
     handleNewClick() {
       dispatch(newProject());
+      dispatch(clearKeys())
       history.push('/projects');
     },
     handleLoadClick() {

@@ -8,6 +8,7 @@ import _ from 'lodash'
 const GET_KEYS = 'GET_KEYS'
 const UPLOAD_KEY = 'UPLOAD_KEY'
 const REMOVE_KEY = 'REMOVE_KEY'
+const CLEAR_KEY = 'CLEAR_KEY'
 
 /**
  * INITIAL STATE
@@ -20,6 +21,7 @@ const defaultKeyboard = {keys: []}
 const getKeys = keys => ({type: GET_KEYS, keys})
 const uploadKey = key => ({type: UPLOAD_KEY, key})
 const removeKey = key => ({type: REMOVE_KEY, key})
+export const clearKeys = () => ({type: CLEAR_KEY})
 
 /**
  * THUNK CREATORS
@@ -78,6 +80,8 @@ export default function (state = defaultKeyboard, action) {
       return [...state, action.key]
     case REMOVE_KEY:
       return [...state].filter(key => key !== action.key)
+    case CLEAR_KEY:
+      return defaultKeyboard;
     default:
       return state
   }

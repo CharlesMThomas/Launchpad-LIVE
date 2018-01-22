@@ -29,12 +29,6 @@ class SoundSelector extends Component {
     if (prevProps.keys.length > this.props.keys.length) {
       this.props.handleSaveProjectAfterRemove(this.props.keyboard.track)
     }
-
-    if (!prevProps.keyboard.id && this.props.keyboard.id){
-      this.props.handleGetKeys(this.props.keyboard.id);
-    } else if (prevProps.keyboard.id !== this.props.keyboard.id){
-      this.props.handleGetKeys(this.props.keyboard.id);
-    }
   }
 
   render() {
@@ -117,9 +111,6 @@ const mapDispatch = (dispatch) => {
     handleUploadKey(event) {
       const sound = event.target.files[0];
       dispatch(uploadKeyThunk(sound))
-    },
-    handleGetKeys(keyboardId) {
-      dispatch(getKeysThunk(keyboardId))
     },
     handleAddKey(key) {
       dispatch(addKey(key))
