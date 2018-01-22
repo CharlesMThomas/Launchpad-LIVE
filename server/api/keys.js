@@ -26,7 +26,7 @@ router.post('/', (req, res, next) => {
         .then(result => {
           // console.log('Result: ', result[0]);
           console.log('File Uploaded!');
-          const audioURL = `https://firebasestorage.googleapis.com/v0/b/fsa-stackathon.appspot.com/o/${req.headers.name}?alt=media&token=${process.env.ACCESS_TOKEN}`
+          const audioURL = `https://firebasestorage.googleapis.com/v0/b/fsa-stackathon.appspot.com/o/${req.headers.name}?alt=media&token=4148436AE4D4AAD5A6A02DB2E79C01FAC1B0DCF5E0160A58366ADCE568606481`
 
           Key.create({name: req.headers.name, audioURL, keyboardId: req.headers.keyboardid})
             .then(key => {
